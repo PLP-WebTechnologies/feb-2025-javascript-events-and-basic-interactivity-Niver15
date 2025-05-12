@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Interactive Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Web Page</h1>
+
+  <!-- Event Handling -->
+  <button id="clickBtn">Click Me!</button>
+  <div id="hoverBox">Hover Here</div>
+  <input type="text" id="keyInput" placeholder="Type something..." />
+  <div id="secretBox">Double-click or long-press me</div>
+  <p id="secretMsg" style="display:none;">Secret unlocked!</p>
+
+  <!-- Interactive Elements -->
+  <button id="changeTextBtn">Change Text</button>
+  <p id="changeableText">Original text</p>
+
+  <div id="slideshow">
+    <img id="galleryImg" src="https://via.placeholder.com/200x150?text=Image+1" alt="Slideshow">
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <div class="tabs">
+    <button class="tabBtn" onclick="toggleTab('tab1')">Tab 1</button>
+    <button class="tabBtn" onclick="toggleTab('tab2')">Tab 2</button>
+    <div id="tab1" class="tabContent">Content for Tab 1</div>
+    <div id="tab2" class="tabContent" style="display:none;">Content for Tab 2</div>
+  </div>
+
+  <!-- Form Validation -->
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Name" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <span id="passwordHint"></span><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
